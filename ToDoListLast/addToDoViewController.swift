@@ -16,10 +16,9 @@ class addToDoViewController: UIViewController {
     var saveDate: UserDefaults = UserDefaults.standard
     
     @IBAction func addItem(){
-        todoItem.append(todoTextField.text!)
-        todoTextField.text = ""
         saveDate.set(todoTextField, forKey: "Todo")
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

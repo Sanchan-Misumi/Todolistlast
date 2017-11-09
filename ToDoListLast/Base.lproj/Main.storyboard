@@ -31,10 +31,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gg9-k1-0cG"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="c0P-D5-Zmt"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,9 +64,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM5-eL-acR">
-                                <rect key="frame" x="168" y="318" width="30" height="30"/>
+                                <rect key="frame" x="150" y="315" width="52" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="add"/>
+                                <connections>
+                                    <action selector="addItem" destination="XHa-Rq-P01" eventType="touchUpInside" id="wh8-2D-Nf2"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="6hn-v2-W7a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,4 +100,7 @@
             <point key="canvasLocation" x="-210" y="133"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6hn-v2-W7a"/>
+    </inferredMetricsTieBreakers>
 </document>

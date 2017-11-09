@@ -39,8 +39,11 @@ class ViewController: UIViewController,UITableViewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if todolistTable != nil {
         todolistTable.reloadData()
     }
+    }
+    
 
      override   func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
