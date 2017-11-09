@@ -44,7 +44,7 @@
 		EE218C711FAF372100ACE99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE218C761FAF372100ACE99F /* ToDoListLastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListLastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE218C7A1FAF372100ACE99F /* ToDoListLastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListLastTests.swift; sourceTree = "<group>"; };
-		EE218C7C1FAF372100ACE99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE218C7C1FAF372100ACE99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ToDoListLastTests/Info.plist; sourceTree = "<group>"; };
 		EE218C811FAF372100ACE99F /* ToDoListLastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListLastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE218C851FAF372100ACE99F /* ToDoListLastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListLastUITests.swift; sourceTree = "<group>"; };
 		EE218C871FAF372100ACE99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				EE218C7A1FAF372100ACE99F /* ToDoListLastTests.swift */,
-				EE218C7C1FAF372100ACE99F /* Info.plist */,
 			);
 			path = ToDoListLastTests;
 			sourceTree = "<group>";
@@ -123,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EE218C851FAF372100ACE99F /* ToDoListLastUITests.swift */,
+				EE218C7C1FAF372100ACE99F /* Info.plist */,
 				EE218C871FAF372100ACE99F /* Info.plist */,
 			);
 			path = ToDoListLastUITests;
