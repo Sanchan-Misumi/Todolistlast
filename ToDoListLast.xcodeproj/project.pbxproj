@@ -49,6 +49,7 @@
 		EE218C851FAF372100ACE99F /* ToDoListLastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListLastUITests.swift; sourceTree = "<group>"; };
 		EE218C871FAF372100ACE99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE218C931FAF390200ACE99F /* addToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addToDoViewController.swift; sourceTree = "<group>"; };
+		EE515ACD1FC2C66C00704A18 /* くまもと本丸ゴシックmini.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "くまもと本丸ゴシックmini.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 				EE218C651FAF372100ACE99F /* AppDelegate.swift */,
 				EE218C671FAF372100ACE99F /* ViewController.swift */,
 				EE218C691FAF372100ACE99F /* Main.storyboard */,
+				EE515ACD1FC2C66C00704A18 /* くまもと本丸ゴシックmini.otf */,
 				EE218C6C1FAF372100ACE99F /* Assets.xcassets */,
 				EE218C6E1FAF372100ACE99F /* LaunchScreen.storyboard */,
 				EE218C711FAF372100ACE99F /* Info.plist */,

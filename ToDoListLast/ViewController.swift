@@ -16,7 +16,7 @@ class ViewController: UIViewController,UITableViewDelegate {
 
 //    todoItemというストリング型の変数を準備
     var todoItem = [String]()
-//    最初の画面で起こること
+//画面が表示する前の一番最初の処理
     override func viewDidLoad() {
         super.viewDidLoad()
 //        もしUserdefaultに入っている情報が空なら、変数todolistはUserDefaultsに保存されているものです
@@ -25,7 +25,7 @@ class ViewController: UIViewController,UITableViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     }
-    //tableViewはtodoItemの数をカウントして表示してください
+    //toDoItemの数をカウントしてそれをnumberOfRowsInSectionに返す
     func tableView(tableView: UITableView, numberOfRowsInSection: Int) -> Int {
         return todoItem.count
     }
@@ -43,19 +43,12 @@ class ViewController: UIViewController,UITableViewDelegate {
             todolistTable.reloadData()
         }
     }
-   // もしtodolistTableが空なら todolistTableを再度読み込んでください
+   // 画面が表示された直後にtodolistTableが空なら todolistTableを再度読み込んでください
     override func viewDidAppear(_ animated: Bool) {
         if todolistTable != nil {
         todolistTable.reloadData()
     }
     }
-    
-// ？？
-     override   func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
