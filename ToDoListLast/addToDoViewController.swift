@@ -22,11 +22,10 @@ class addToDoViewController: UIViewController {
     @IBAction func addItem(){
         saveDate.set(todoTextField, forKey: "Todo")
     }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        todoTextField.text = saveDate.object(forKey: "Todo") as? String
+        todoTextField.delegate = self as? UITextFieldDelegate
         // Do any additional setup after loading the view.
     }
 

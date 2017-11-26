@@ -43,6 +43,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="todolistTable" destination="G5k-Ns-JF1" id="WXE-DV-Tef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,6 +79,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="LxX-MZ-YSo"/>
                     </view>
+                    <connections>
+                        <outlet property="todoTextField" destination="INA-Fh-nx6" id="QYc-gu-SqS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZv-w6-U9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
