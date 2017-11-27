@@ -15,8 +15,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet var todolistTable: UITableView!
 
-//    todoItemというストリング型の変数を準備
+    //todoItemというストリング型の変数を準備
     var todoItem : [String]!
+    
+    //押されたセルのindexPathを保存する
+    var numberIndex : Int!
 
 //画面が表示する前の一番最初の処理
     override func viewDidLoad() {
@@ -28,9 +31,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //            todoItem = UserDefaults.standard.object(forKey: "todo") as! [String]
         if UserDefaults.standard.object(forKey: "todo") != nil {
             todoItem = UserDefaults.standard.array(forKey: "todo") as! [String]
-        } else{
-            //todoItemがnullになって落ちないように、UserDefaultsの"todo"に値が存在しない時は初期値を代入
-            todoItem = ["Apple", "Banana", "Cascade"]
+        }else{
+            todoItem = [""]
         }
         
         todolistTable.delegate = self
@@ -45,6 +47,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         cell?.textLabel?.text = todoItem[indexPath.row]
         return cell!
+    }
+    
+    //セルがタップされた時の処理をdelegateメソッドを利用して実装
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        numberIndex = indexPath.row
+        performSegue(withIdentifier: "editSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editSegue" {
+            let editViewController = segue.destination as! EditViewController
+            editViewController.numberIndex = self.numberIndex
+        }
     }
 
 }

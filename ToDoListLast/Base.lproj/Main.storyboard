@@ -67,12 +67,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM5-eL-acR">
-                                <rect key="frame" x="150" y="315" width="52" height="138"/>
+                                <rect key="frame" x="126" y="313" width="115" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="add"/>
+                                <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="addItem" destination="XHa-Rq-P01" eventType="touchUpInside" id="FO8-ob-yzb"/>
-                                    <segue destination="Pcs-Zh-twG" kind="show" id="6hn-v2-W7a"/>
+                                    <segue destination="Pcs-Zh-twG" kind="show" id="iek-bu-pUx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,7 +85,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZv-w6-U9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533.5999999999999" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1734" y="-174"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="XQ2-4T-mVs">
+            <objects>
+                <viewController id="NvI-pM-ju2" customClass="EditViewController" customModule="ToDoListLast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yqE-qK-Bpr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPb-if-58r">
+                                <rect key="frame" x="94" y="216" width="187" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67785719929453503" green="1" blue="0.96444599249500695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-rw-4af">
+                                <rect key="frame" x="164" y="404" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="obe-Ka-RXn"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" id="NPU-Eo-3Ku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAM-h1-cRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733.5999999999999" y="603.14842578710648"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W4P-9b-KYl">
@@ -106,4 +139,7 @@
             <point key="canvasLocation" x="-76" y="132"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NPU-Eo-3Ku"/>
+    </inferredMetricsTieBreakers>
 </document>
