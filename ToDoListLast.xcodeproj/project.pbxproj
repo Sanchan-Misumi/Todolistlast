@@ -14,7 +14,7 @@
 		EE218C701FAF372100ACE99F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE218C6E1FAF372100ACE99F /* LaunchScreen.storyboard */; };
 		EE218C7B1FAF372100ACE99F /* ToDoListLastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE218C7A1FAF372100ACE99F /* ToDoListLastTests.swift */; };
 		EE218C861FAF372100ACE99F /* ToDoListLastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE218C851FAF372100ACE99F /* ToDoListLastUITests.swift */; };
-		EE515B811FCC032900704A18 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE515B801FCC032900704A18 /* AddViewController.swift */; };
+		EE515B851FCC04A300704A18 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE515B841FCC04A300704A18 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		EE218C851FAF372100ACE99F /* ToDoListLastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListLastUITests.swift; sourceTree = "<group>"; };
 		EE218C871FAF372100ACE99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE515ACD1FC2C66C00704A18 /* くまもと本丸ゴシックmini.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "くまもと本丸ゴシックmini.otf"; sourceTree = "<group>"; };
-		EE515B801FCC032900704A18 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		EE515B841FCC04A300704A18 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 				EE218C6C1FAF372100ACE99F /* Assets.xcassets */,
 				EE218C6E1FAF372100ACE99F /* LaunchScreen.storyboard */,
 				EE218C711FAF372100ACE99F /* Info.plist */,
-				EE515B801FCC032900704A18 /* AddViewController.swift */,
+				EE515B841FCC04A300704A18 /* AddViewController.swift */,
 			);
 			path = ToDoListLast;
 			sourceTree = "<group>";
@@ -266,7 +266,7 @@
 			files = (
 				EE218C681FAF372100ACE99F /* ViewController.swift in Sources */,
 				EE218C661FAF372100ACE99F /* AppDelegate.swift in Sources */,
-				EE515B811FCC032900704A18 /* AddViewController.swift in Sources */,
+				EE515B851FCC04A300704A18 /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,10 +26,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //        // Do any additional setup after loading the view, typically from a nib.
         todolistTable.delegate = self
         todolistTable.dataSource = self
-        
-            todoItem.append("Apple")
-         todoItem.append("Banana")
-        print(todoItem)
+        todoItem = saveDate.object(forkey: "Todo")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

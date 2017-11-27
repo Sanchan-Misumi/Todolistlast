@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="132.68365817091455"/>
         </scene>
-        <!--Add To Do View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="M8P-IQ-e2a">
             <objects>
-                <viewController id="XHa-Rq-P01" customClass="addToDoViewController" customModule="ToDoListLast" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XHa-Rq-P01" customClass="AddViewController" customModule="ToDoListLast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2SU-Hw-Te7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
