@@ -19,7 +19,7 @@ class AddViewController: UIViewController {
     
     //addItemを押した時にUserDefaultsにデータを保存します
     @IBAction func addItem(){
-        saveDate.set(todoTextField, forKey: "Todo")
+        saveDate.set(todoItem, forKey: "Todo")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
