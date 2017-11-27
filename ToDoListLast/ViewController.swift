@@ -16,7 +16,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet var todolistTable: UITableView!
 
 //    todoItemというストリング型の変数を準備
-    var todoItem = [String]()
+    var todoItem = UserDefaults.standard.array(forKey: "todo”)
 
 //画面が表示する前の一番最初の処理
     override func viewDidLoad() {

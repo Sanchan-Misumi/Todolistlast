@@ -10,7 +10,9 @@ import UIKit
 
 class AddViewController: UIViewController {
     //ToDoItemという変数を用意します
-    var todoItem = [String]()
+    var todoItem = Array<Any>()
+    
+
     //UITextField!使います
     @IBOutlet var todoTextField: UITextField!
     
