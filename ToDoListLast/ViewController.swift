@@ -16,15 +16,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet var todolistTable: UITableView!
 
 //    todoItemというストリング型の変数を準備
-    var todoItem = UserDefaults.standard.array(forKey: "todo”)
+    var todoItem : [String]!
 
 //画面が表示する前の一番最初の処理
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+
 ////        もしUserdefaultに入っている情報が空なら、変数todolistはUserDefaultsに保存されているものです
 //        if UserDefaults.standard.object(forKey: "todo") != nil {
 //            todoItem = UserDefaults.standard.object(forKey: "todo") as! [String]
-//        // Do any additional setup after loading the view, typically from a nib.
+        if UserDefaults.standard.object(forKey: "todo") != nil {
+            todoItem = UserDefaults.standard.array(forKey: "todo") as! [String]
+        } else{
+            //todoItemがnullになって落ちないように、UserDefaultsの"todo"に値が存在しない時は初期値を代入
+            todoItem = ["Apple", "Banana", "Cascade"]
+        }
+        
         todolistTable.delegate = self
         todolistTable.dataSource = self
     }

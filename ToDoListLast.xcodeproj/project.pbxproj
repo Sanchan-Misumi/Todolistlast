@@ -102,12 +102,12 @@
 			children = (
 				EE218C651FAF372100ACE99F /* AppDelegate.swift */,
 				EE218C671FAF372100ACE99F /* ViewController.swift */,
+				EE515B841FCC04A300704A18 /* AddViewController.swift */,
 				EE218C691FAF372100ACE99F /* Main.storyboard */,
 				EE515ACD1FC2C66C00704A18 /* くまもと本丸ゴシックmini.otf */,
 				EE218C6C1FAF372100ACE99F /* Assets.xcassets */,
 				EE218C6E1FAF372100ACE99F /* LaunchScreen.storyboard */,
 				EE218C711FAF372100ACE99F /* Info.plist */,
-				EE515B841FCC04A300704A18 /* AddViewController.swift */,
 			);
 			path = ToDoListLast;
 			sourceTree = "<group>";
