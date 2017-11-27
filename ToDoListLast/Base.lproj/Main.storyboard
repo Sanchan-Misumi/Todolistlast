@@ -37,11 +37,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="To Do List" id="mVc-HP-8fe">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="76w-uW-1mW">
-                            <connections>
-                                <segue destination="XHa-Rq-P01" kind="show" id="Aay-0I-i06"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="76w-uW-1mW"/>
                     </navigationItem>
                     <connections>
                         <outlet property="todolistTable" destination="G5k-Ns-JF1" id="WXE-DV-Tef"/>
@@ -71,7 +67,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="add"/>
                                 <connections>
-                                    <action selector="addItem" destination="XHa-Rq-P01" eventType="touchUpInside" id="wh8-2D-Nf2"/>
+                                    <action selector="addItem" destination="XHa-Rq-P01" eventType="touchUpInside" id="FO8-ob-yzb"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="6hn-v2-W7a"/>
                                 </connections>
                             </button>
@@ -79,9 +75,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="LxX-MZ-YSo"/>
                     </view>
-                    <connections>
-                        <outlet property="todoTextField" destination="INA-Fh-nx6" id="QYc-gu-SqS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZv-w6-U9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
