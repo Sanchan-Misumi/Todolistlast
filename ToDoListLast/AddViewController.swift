@@ -26,12 +26,14 @@ class AddViewController: UIViewController {
     @IBAction func addItem(){
         todoItem.append(todoTextField.text!)
         saveDate.set(todoItem, forKey: "Todo")
+        print(todoItem)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        todoTextField.text = saveDate.object(forKey: "Todo") as? String
-        todoTextField.delegate = self as? UITextFieldDelegate
-        saveDate.set(todoItem, forKey: "Todo")as? [String]
+        //これ何？
+        if UserDefaults.standard.array(forKey: "Todo") != nil{
+            todoItem = UserDefaults.standard.array(forKey: "Todo")as! [String]
+        }
         
         // Do any additional setup after loading the view.
     }

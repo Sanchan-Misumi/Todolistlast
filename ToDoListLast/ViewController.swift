@@ -27,7 +27,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //        // Do any additional setup after loading the view, typically from a nib.
         todolistTable.delegate = self
         todolistTable.dataSource = self
-        todoItem = saveDate.object(forKey: "Todo") as? [String]
+        todoItem = UserDefaults.standard.array(forKey: "Todo")
+         todolistTable.reloadData()
     
     }
     
