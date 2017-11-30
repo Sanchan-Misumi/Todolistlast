@@ -12,11 +12,11 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    let saveDate: UserDefaults = UserDefaults.standard
     
     @IBOutlet var todolistTable: UITableView!
-
 //    todoItemというストリング型の変数を準備
-    var todoItem = UserDefaults.standard.array(forKey: "todo”)
+    var todoItem = UserDefaults.standard.array(forKey: "Todo")
 
 //画面が表示する前の一番最初の処理
     override func viewDidLoad() {
@@ -27,15 +27,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //        // Do any additional setup after loading the view, typically from a nib.
         todolistTable.delegate = self
         todolistTable.dataSource = self
+        todoItem = saveDate.object(forKey: "Todo") as? [String]
+    
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoItem.count
+        return todoItem!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = todoItem[indexPath.row]
+        cell?.textLabel?.text = todoItem?[indexPath.row] as? String
         return cell!
     }
 

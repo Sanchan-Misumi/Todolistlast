@@ -8,26 +8,31 @@
 
 import UIKit
 
+
 class AddViewController: UIViewController {
     //ToDoItemという変数を用意します
-    var todoItem = Array<Any>()
+    var todoItem = [String]()
     
+  
 
     //UITextField!使います
     @IBOutlet var todoTextField: UITextField!
     
     //倉庫を作ってそこにデータ保存します
     let saveDate: UserDefaults = UserDefaults.standard
+
     
     //addItemを押した時にUserDefaultsにデータを保存します
     @IBAction func addItem(){
+        todoItem.append(todoTextField.text!)
         saveDate.set(todoItem, forKey: "Todo")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         todoTextField.text = saveDate.object(forKey: "Todo") as? String
         todoTextField.delegate = self as? UITextFieldDelegate
-
+        saveDate.set(todoItem, forKey: "Todo")as? [String]
+        
         // Do any additional setup after loading the view.
     }
 
