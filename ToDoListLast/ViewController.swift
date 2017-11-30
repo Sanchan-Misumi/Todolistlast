@@ -26,7 +26,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-////        もしUserdefaultに入っている情報が空なら、変数todolistはUserDefaultsに保存されているものです
+//        もしUserdefaultに入っている情報が空なら、変数todolistはUserDefaultsに保存されているものです
 //        if UserDefaults.standard.object(forKey: "todo") != nil {
 //            todoItem = UserDefaults.standard.object(forKey: "todo") as! [String]
         if UserDefaults.standard.object(forKey: "todo") != nil {
@@ -55,10 +55,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         performSegue(withIdentifier: "editSegue", sender: nil)
     }
     
+    //画面遷移時の設定
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "editSegue" {
             let editViewController = segue.destination as! EditViewController
-            editViewController.numberIndex = self.numberIndex
+            editViewController.editViewNumberIndex = self.numberIndex
         }
     }
 

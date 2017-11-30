@@ -10,12 +10,27 @@ import UIKit
 
 class EditViewController: UIViewController {
     
-    var numberIndex : Int = 0
+    var editViewNumberIndex : Int = 0
 
+    @IBOutlet weak var editTextField: UITextField!
+    
+    var saveData = UserDefaults.standard
+    var todoItem : [String]!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        guard let array = saveData.array(forKey: "todo")  else {
+            print("todoUserDefaults isn't EXIST!")
+            return
+        }
+        
+        
+        todoItem = array as! [String]
+        editTextField.text = todoItem[editViewNumberIndex]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +38,11 @@ class EditViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func editItem() {
+        todoItem[editViewNumberIndex] = editTextField.text!
 
+    }
+    
     /*
     // MARK: - Navigation
 

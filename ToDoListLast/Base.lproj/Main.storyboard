@@ -45,6 +45,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="todolistTable" destination="G5k-Ns-JF1" id="WXE-DV-Tef"/>
+                        <segue destination="NvI-pM-ju2" kind="showDetail" identifier="editSegue" id="9Rx-Lo-Hd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -87,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="1734" y="-174"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--Title-->
         <scene sceneID="XQ2-4T-mVs">
             <objects>
                 <viewController id="NvI-pM-ju2" customClass="EditViewController" customModule="ToDoListLast" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,24 +96,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-rw-4af">
+                                <rect key="frame" x="164" y="404" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="editItem" destination="NvI-pM-ju2" eventType="touchUpInside" id="t4B-GQ-0zH"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPb-if-58r">
-                                <rect key="frame" x="94" y="216" width="187" height="30"/>
+                                <rect key="frame" x="94" y="230" width="187" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.67785719929453503" green="1" blue="0.96444599249500695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-rw-4af">
-                                <rect key="frame" x="164" y="404" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="obe-Ka-RXn"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="PU8-dq-wF4"/>
                     <connections>
+                        <outlet property="editTextField" destination="JPb-if-58r" id="Swz-c0-3xe"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" id="NPU-Eo-3Ku"/>
                     </connections>
                 </viewController>
