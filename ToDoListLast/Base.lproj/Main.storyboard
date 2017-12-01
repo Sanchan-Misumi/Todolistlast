@@ -45,12 +45,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="todolistTable" destination="G5k-Ns-JF1" id="WXE-DV-Tef"/>
-                        <segue destination="NvI-pM-ju2" kind="showDetail" identifier="editSegue" id="9Rx-Lo-Hd2"/>
+                        <segue destination="NvI-pM-ju2" kind="show" identifier="editSegue" id="wcI-Wj-YFp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.20000000000005" y="132.68365817091455"/>
+            <point key="canvasLocation" x="735" y="132"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="M8P-IQ-e2a">
@@ -73,7 +73,6 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="addItem" destination="XHa-Rq-P01" eventType="touchUpInside" id="FO8-ob-yzb"/>
-                                    <segue destination="Pcs-Zh-twG" kind="show" id="iek-bu-pUx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZv-w6-U9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="-174"/>
+            <point key="canvasLocation" x="1729" y="-417"/>
         </scene>
         <!--Title-->
         <scene sceneID="XQ2-4T-mVs">
@@ -119,12 +118,11 @@
                     <navigationItem key="navigationItem" title="Title" id="PU8-dq-wF4"/>
                     <connections>
                         <outlet property="editTextField" destination="JPb-if-58r" id="Swz-c0-3xe"/>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" id="NPU-Eo-3Ku"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAM-h1-cRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733.5999999999999" y="603.14842578710648"/>
+            <point key="canvasLocation" x="1729" y="412"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W4P-9b-KYl">
@@ -136,6 +134,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ghC-I6-bEi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eFC-Dk-fLC"/>
                     </connections>
@@ -145,7 +146,4 @@
             <point key="canvasLocation" x="-76" y="132"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="NPU-Eo-3Ku"/>
-    </inferredMetricsTieBreakers>
 </document>
