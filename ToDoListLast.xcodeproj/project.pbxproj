@@ -15,6 +15,7 @@
 		EE218C7B1FAF372100ACE99F /* ToDoListLastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE218C7A1FAF372100ACE99F /* ToDoListLastTests.swift */; };
 		EE218C861FAF372100ACE99F /* ToDoListLastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE218C851FAF372100ACE99F /* ToDoListLastUITests.swift */; };
 		EE515B851FCC04A300704A18 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE515B841FCC04A300704A18 /* AddViewController.swift */; };
+		EE571CF41FD4EB1800BC89FC /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE571CF31FD4EB1800BC89FC /* EditingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		EE218C871FAF372100ACE99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE515ACD1FC2C66C00704A18 /* くまもと本丸ゴシックmini.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "くまもと本丸ゴシックmini.otf"; sourceTree = "<group>"; };
 		EE515B841FCC04A300704A18 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		EE571CF31FD4EB1800BC89FC /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		EE218C641FAF372100ACE99F /* ToDoListLast */ = {
 			isa = PBXGroup;
 			children = (
+				EE571CF31FD4EB1800BC89FC /* EditingViewController.swift */,
 				EE218C651FAF372100ACE99F /* AppDelegate.swift */,
 				EE218C671FAF372100ACE99F /* ViewController.swift */,
 				EE218C691FAF372100ACE99F /* Main.storyboard */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE218C681FAF372100ACE99F /* ViewController.swift in Sources */,
+				EE571CF41FD4EB1800BC89FC /* EditingViewController.swift in Sources */,
 				EE218C661FAF372100ACE99F /* AppDelegate.swift in Sources */,
 				EE515B851FCC04A300704A18 /* AddViewController.swift in Sources */,
 			);
